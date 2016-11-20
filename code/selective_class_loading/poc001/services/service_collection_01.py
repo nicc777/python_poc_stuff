@@ -26,6 +26,3 @@ class SomeOtherClass:
 
 	def age(self):
 		print('I should not ever work...')
-
-
-

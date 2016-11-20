@@ -20,7 +20,7 @@ def load_service(services_dir):
 					print('Scanning file: {}'.format(file_name))
 					try:
 						imp_module = os.path.splitext(os.path.basename(file_name))[0]
-						new_module = importlib.import_module(imp_module, package=None)	
+						new_module = importlib.import_module(imp_module, package=None)
 						for class_name in dir(new_module):
 							if class_name != 'Person':
 								if isinstance(getattr(new_module, class_name), type):
@@ -31,4 +31,5 @@ def load_service(services_dir):
 						print('Imported module "{}"'.format(imp_module))
 					except:
 						print('Failed to load module "{}" :: {}'.format(imp_module,traceback.format_exc()))
-						
+	else:
+		print('Input "{}" does not look like a directory.'.format(services_dir))
