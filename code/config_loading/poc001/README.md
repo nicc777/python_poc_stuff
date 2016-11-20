@@ -44,3 +44,22 @@ Run another test by deleting one of the environment variables:
 	log directory     : /home/user/log
 
 As can be seen, the default value for LOG_DIR is now used.
+
+You can also use the loader in Python like this:
+
+	$ python
+	Python 3.5.2 (default, Sep 10 2016, 08:21:44) 
+	[GCC 5.4.0 20160609] on linux
+	Type "help", "copyright", "credits" or "license" for more information.
+	>>> from conf_reader import CONFIG
+	conf_file "/home/user/app_conf_file.py" exists - import deferred
+	importing config from "/home/user/app_conf_file.py"
+	>>> CONFIG
+	<module 'app_conf_file' from '/home/user/app_conf_file.py'>
+	>>> CONFIG.SERVICE_DIR
+	'/tmp/test'
+	>>> CONFIG.LOG_DIR
+	'/home/user/log'
+	>>> 
+
+As can be seen, the config is loaded as soon as the module is imported.
