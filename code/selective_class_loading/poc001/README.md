@@ -19,6 +19,7 @@ Try the following:
 * Clone the repository somewhere on your machine
 * Then run the following:
 
+Shell example:
 
 	$ cd python_poc_stuff/code/selective_class_loading/poc001
 	$ python
