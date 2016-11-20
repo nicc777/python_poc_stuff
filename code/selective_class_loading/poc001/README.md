@@ -27,10 +27,10 @@ Shell example:
 	[GCC 5.4.0 20160609] on linux
 	Type "help", "copyright", "credits" or "license" for more information.
 	>>> from test.service_catalog import load_service, SERVICES
-	>>> load_service('/home/nicc777/git/python_poc_stuff/code/selective_class_loading/poc001/services/')
-	Evaluating dir "/home/nicc777/git/python_poc_stuff/code/selective_class_loading/poc001/services"
-	Adding "/home/nicc777/git/python_poc_stuff/code/selective_class_loading/poc001/services" to import path
-	Scanning file: /home/nicc777/git/python_poc_stuff/code/selective_class_loading/poc001/services/service_collection_01.py
+	>>> load_service('/tmp/git/python_poc_stuff/code/selective_class_loading/poc001/services/')
+	Evaluating dir "/tmp/git/python_poc_stuff/code/selective_class_loading/poc001/services"
+	Adding "/tmp/git/python_poc_stuff/code/selective_class_loading/poc001/services" to import path
+	Scanning file: /tmp/git/python_poc_stuff/code/selective_class_loading/poc001/services/service_collection_01.py
 	  FOUND an implementation of "Person": Man
 	  FOUND an implementation of "Person": Woman
 	Imported module "service_collection_01"
