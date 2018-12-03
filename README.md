@@ -10,6 +10,7 @@ The code is 'Public Domain'.
 
 * [selective_class_loading/poc001](https://github.com/nicc777/python_poc_stuff/tree/master/code/selective_class_loading/poc001) - Dynamically load classes that implement a certain base class. Expose those loaded classes in a dictionary.
 * [config_loading/poc001](https://github.com/nicc777/python_poc_stuff/tree/master/code/config_loading/poc001) - Load Python source file as config dynamically. 
+* [private_ip_finder/poc001](https://github.com/nicc777/python_poc_stuff/tree/master/code/private_ip_finder/poc001) - Find the private IP address on the current machine, in particular the one used to access the Internet.
 
 ## The Fine Print
 
